@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/about', function () {
@@ -26,11 +28,14 @@ Route::get('/about', function () {
 });
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    return view('gallery', [
+        "title" => "Gallery"
+    ]);
 });
 
 Route::get('/about', function() {
     return view('about', [
+        "title" => "About",
         "nama" => "Daffa Adi Laksono",
         "email" => "viewless088@gmail.com",
         "gambar" => "뭘 보ㅏㅏ__ 까불디마라_나 짱쎄(image0).jpg"
