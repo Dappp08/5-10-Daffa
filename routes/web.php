@@ -41,3 +41,7 @@ Route::get('/about', function() {
         "gambar" => "뭘 보ㅏㅏ__ 까불디마라_나 짱쎄(image0).jpg"
     ]);
 });
+
+Route::resource('/contacts', ContactController::class);
+
+use App\Http\Controller\ContactController;
