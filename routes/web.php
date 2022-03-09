@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,5 +44,3 @@ Route::get('/about', function() {
 });
 
 Route::resource('/contacts', ContactController::class);
-
-use App\Http\Controller\ContactController;
